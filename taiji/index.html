@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<style type="text/css">
+			#mycanvas{
+				display: block;
+				border: 1px solid red;
+				margin: auto;
+			}
+		</style>
+		
+	</head>
+	<body>
+		
+		<canvas id="mycanvas" width="800" height="600"></canvas>
+		
+		<script type="text/javascript">
+			function rotate () {
+				var context = document.querySelector("#mycanvas").getContext("2d");
+				var angle = Math.PI;
+				//context.clearRect(0,0,1000,1000);
+				context.translate(400,300);
+				context.rotate(angle/180);
+				context.translate(-400,-300);
+				context.clearRect(0,0,1000,1000);
+				
+				
+				context.beginPath();
+				context.lineWidth = 5;
+				context.arc(400,300,200,angle/2,angle*(3/2),false);
+				context.stroke();
+				context.fill();
+				
+				context.beginPath();
+				context.lineWidth = 1
+				context.arc(400,200,100,angle/2,angle*(3/2),true);
+//				context.stroke();
+				context.fill();
+				
+				context.beginPath();
+				context.fillStyle = "white";
+				context.arc(400,400,100,angle/2,angle*(3/2),false);
+//				context.stroke();
+				context.fill();
+				
+				context.beginPath();
+				context.arc(400,200,25,0,angle*2,false);
+//				context.stroke();
+				context.fill();
+				
+				context.beginPath();
+				context.lineWidth = 5;
+				context.arc(400,300,200,0,angle*2,true);
+				context.stroke();
+				
+				context.beginPath();
+				context.fillStyle = "black";
+				context.arc(400,400,25,0,angle*2,false);
+				context.stroke();
+				context.fill();
+			}
+			rotate();
+			//setInterval(rotate,10);
+		</script>
+		
+		
+	</body>
+</html>
