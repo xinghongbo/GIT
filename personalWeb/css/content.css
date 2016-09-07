@@ -1,0 +1,36 @@
+#content_about{
+	position: absolute;
+	height: 200px;
+	width: 500px;
+	background-color: #276F03;
+	top: 220px;
+	left: 150px;
+	transform: rotate(-8deg);
+}
+#content_about>p{
+	font-size: 160px;
+	color: white;
+}
+#content img{
+	position: absolute;
+	left: 900px;
+	top: 500px;
+	width: 200px;
+	height: 200px;
+}
+#en{
+	color: #276F03;
+	position: absolute;
+	top: 200px;
+	left: 750px;
+	font-size: 80px;
+	transform: scaleX(1.5);
+}
+#secEn{
+	color: #276F03;
+	position: absolute;
+	top: 250px;
+	left: 730px;
+	font-size: 200px;
+	transform: scaleX(1.5);
+}

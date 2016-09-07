@@ -1,0 +1,62 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+#myCanvas{
+	display: block;
+	margin: auto;
+}
+#top{
+	position: absolute;
+	left: 74px;
+	top: 0px;
+	width: 1200px;
+	height: 200px;
+}
+#top a:first-child{
+	position: absolute;
+	transform: scale(0.5);
+	left: 950px;
+	top: -70px;
+}
+#top a:nth-child(2){
+	position: absolute;
+	transform: scale(0.4);
+	left: 750px;
+	top: -80px;
+}
+#top a:last-child{
+	position: absolute;
+	transform: scale(0.3);
+	left: 550px;
+	top: -90px;
+}
+#aboutMe p{
+	transform: rotate(8deg);
+	position: absolute;
+}
+#aboutMe p:first-child{
+	font-size: 30px;
+	top: 200px;
+	left: 1070px;
+}
+#aboutMe p:nth-child(2){
+	font-size: 30px;
+	top: 170px;
+	left: 880px;
+}
+#aboutMe p:last-child{
+	font-size: 30px;
+	top: 140px;
+	left: 660px;
+}
+#aboutMe a{
+	color: #5A258A;
+}
+#aboutMe a:hover{
+	color: red;	
+}
+
